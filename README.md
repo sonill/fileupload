@@ -26,3 +26,15 @@ Run the following command to install the package from **Packagist**:
 
 ```bash
 composer require sanil/fileupload
+
+### 2. Upload a File
+
+You can upload a file by calling the `upload` method on your model instance:
+
+```php
+$model = YourModel::find(1);
+
+$file = $request->file('file'); // get the file from the request
+$collection = 'profile_pictures'; // Optional: set a collection name
+$uploadedFile = $model->upload($file, $collection);
+
