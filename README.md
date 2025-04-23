@@ -1,6 +1,11 @@
 Laravel File Upload Trait
 =========================
 
+
+[![Packagist](https://img.shields.io/packagist/v/sanil/fileupload.svg)](https://packagist.org/packages/sanil/fileupload)
+[![PHP Version Support](https://img.shields.io/packagist/php-v/sanil/fileupload.svg)](https://www.php.net/)
+
+
 A Laravel package to handle file uploads, including image resizing, storage management, and URL generation for uploaded files. This package provides a reusable solution for managing file uploads in Laravel applications with support for multiple storage disks, collections, and image resizing using the Spatie Image library.
 
 Features
