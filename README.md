@@ -36,9 +36,16 @@ Installation
         composer require sanil/fileupload
     
     
-    Run migrations:
+    Publish and run migrations:
 
+        php artisan vendor:publish --tag=fileupload-migrations
         php artisan migrate
+    
+
+    Publish config files (optional):
+
+        php artisan vendor:publish --tag=fileupload-config
+
     
 3.  **Configure Image Sizes**
     
