@@ -33,7 +33,7 @@ Installation
     
     You can install this via Composer:
     
-        composer require sanil/file-upload
+        composer require sanil/fileupload
     
     
     Run migrations:
