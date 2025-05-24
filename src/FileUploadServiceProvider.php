@@ -8,26 +8,12 @@ class FileUploadServiceProvider extends ServiceProvider
 {
 	public function boot(): void
 	{
-		// Load migrations if any
+		// Just load migrations automatically, no publishing
 		$this->loadMigrationsFrom(__DIR__ . '/../database/migrations');
-
-		// Publish migrations
-		$this->publishes([
-			__DIR__ . '/../database/migrations' => database_path('migrations'),
-		], 'fileupload-migrations');
-
-		// Publish config file
-		$this->publishes([
-			__DIR__ . '/../config/fileupload.php' => config_path('fileupload.php'),
-		], 'fileupload-config');
 	}
 
 	public function register(): void
 	{
-		// Merge configuration file
-		$this->mergeConfigFrom(
-			__DIR__ . '/../config/fileupload.php',
-			'fileupload'
-		);
+		// No config to merge, so leave empty or remove
 	}
 }
